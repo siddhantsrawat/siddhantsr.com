@@ -1,7 +1,6 @@
 import ThemeToggle from "./components/ThemeToggle";
 import LiveClock from "./components/LiveClock";
 import CursorTrail from "./components/CursorTrail";
-import Chart from "./components/Chart";
 
 export default function Home() {
   return (
@@ -43,44 +42,62 @@ export default function Home() {
         {/* About Section */}
         <section className="mb-7">
           <h2 className="text-md font-semibold mb-4 text-foreground/50">about</h2>
-          <div className="space-y-2 text-sm leading-relaxed">
-            <p>
-              founder{" "}
+          <div className="text-sm leading-relaxed">
+            <p className="mb-5">
+              building{" "}
               <a
-                href="https://phasor.so"
+                href="https://spectar.ai"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                phasor.so
+                spectar.ai
               </a>
             </p>
-            <p>software i like → codex, claude, chrome</p>
-            <p>things i like → gym, music, tech, stocks</p>
+            <div className="space-y-2">
+              {/*<p>learning agent & cloud infrastructure</p>*/}
+              <p>software i like → codex, claude, chrome</p>
+              <p>things i like → gym, music, tech, stocks</p>
+            </div>
           </div>
         </section>
 
         {/* Projects Section */}
         <section className="mb-7">
           <h2 className="text-md font-semibold mb-4 text-foreground/50">projects</h2>
-          <div className="space-y-4 text-sm leading-relaxed">
-            <div className="flex items-center gap-2">
-              <span className="font-medium">Fetch</span>
-              <span className="text-foreground/50">→</span>
+          <div className="space-y-2 text-sm leading-relaxed">
+            <p>
               <a
+                className="font-medium"
+                href="https://phasor.so"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Phasor
+              </a>
+              <span className="text-foreground/50"> → </span>
+              speech to text
+            </p>
+            <p>
+              <a
+                className="font-medium"
                 href="https://fetchanymedia.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                fetchanymedia.com
+                Fetch
               </a>
-            </div>
+              <span className="text-foreground/50"> → </span>
+              media downloader
+            </p>
           </div>
         </section>
 
-        {/* Chart Section */}
+        {/* Articles Section */}
         <section className="mb-7">
-          <h2 className="text-md font-semibold mb-4 text-foreground/50">portfolio</h2>
-          <Chart />
+          <h2 className="text-md font-semibold mb-4 text-foreground/50">articles</h2>
+          <div className="space-y-2 text-sm leading-relaxed">
+            <p className="text-foreground">coming soon...</p>
+          </div>
         </section>
 
         {/* Footer */}
