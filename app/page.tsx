@@ -92,14 +92,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Articles Section */}
-        <section className="mb-7">
-          <h2 className="text-md font-semibold mb-4 text-foreground/50">articles</h2>
-          <div className="space-y-2 text-sm leading-relaxed">
-            <p className="text-foreground">coming soon...</p>
-          </div>
-        </section>
-
         {/* Footer */}
         <footer className="pt-8 border-t border-current/10 flex items-center justify-between text-sm">
           <LiveClock />
